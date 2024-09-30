@@ -108,7 +108,7 @@ def edit_mood(request, id):
     return render(request, "edit_mood.html", context)
 
 def delete_mood(request, id):
-    # Get mood berdasarkan id
+    # Get mood berdasarkan id.
     mood = MoodEntry.objects.get(pk = id)
     # Hapus mood
     mood.delete()
